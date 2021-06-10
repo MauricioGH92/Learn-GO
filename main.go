@@ -9,4 +9,11 @@ func main() {
   fmt.Println("pi:",pi)
   fmt.Println("pi2:",pi2)
 
+  //declaracion de variables
+  base :=12
+  var altura int = 14
+  var area int
+
+  fmt.Println(base, altura, area)
+
 }
