@@ -30,4 +30,37 @@ func main() {
 
   fmt.Println("Area cuadrado: " , areaCuadrado)
 
+
+  //operadores aritmeticos
+  x:=10
+  y:=51
+
+  //suma
+  result := x+y
+  fmt.Println("Suma: ", result)
+
+  //resta
+  result = y-x
+  fmt.Println("Resta: ", result)
+
+  //multiplicacion
+  result = x*y
+  fmt.Println("Multiplicacion: ", result)
+
+  //division
+  result = y/x
+  fmt.Println("Division: ", result)
+
+  //modulo
+  result = y%x
+  fmt.Println("Modulo: ", result)
+
+  //Incremental
+  x++
+  fmt.Println("Incremental: ", x)
+
+  //decremental
+  x--
+  fmt.Println("Decremental: ", x)
+
 }
