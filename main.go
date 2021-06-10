@@ -5,30 +5,24 @@ import (
     "fmt"
 )
 
-func main() {
-  //declaracion de variables
-  helloMessage := "Hello"
-  worldMessage := "world"
-
-
-  // Println
-  fmt.Println(helloMessage, worldMessage)
-  fmt.Println(helloMessage, worldMessage)
-
-  //printf
-  nombre:= "Platzi"
-  cursos:= 500
-
-  fmt.Printf("%s tiene más de  %d cursos\n",nombre, cursos)
-  fmt.Printf("%v tiene más de  %v cursos\n",nombre, cursos)
-
-  //sprintf
-  message := fmt.Sprintf("%s tiene más de  %d cursos",nombre, cursos)
+func normalFunction(message string){
   fmt.Println(message)
+}
 
-  //tipo de dato
-  fmt.Printf("nombre: %T\n", nombre)
-  fmt.Printf("cursos: %T\n", cursos)
+func duplicado( a int) int{
+  return a*2
+}
+
+func returntwovalue( a int) (c,b int){
+  return a,a*2
+}
+
+
+func main() {
+  normalFunction("Hola mundo")
+  normalFunction(fmt.Sprint("Value: ",duplicado(4)))
+  value1, _ := returntwovalue(2)
+  normalFunction(fmt.Sprint("Value1: ",value1))
 
 
 }
