@@ -5,24 +5,26 @@ import (
     "fmt"
 )
 
-func normalFunction(message string){
-  fmt.Println(message)
-}
-
-func duplicado( a int) int{
-  return a*2
-}
-
-func returntwovalue( a int) (c,b int){
-  return a,a*2
-}
-
 
 func main() {
-  normalFunction("Hola mundo")
-  normalFunction(fmt.Sprint("Value: ",duplicado(4)))
-  value1, _ := returntwovalue(2)
-  normalFunction(fmt.Sprint("Value1: ",value1))
+ 
+  //for condicional
+  for i:=0;i<10;i++ {
+    fmt.Println(i)
+  }
+  fmt.Println()
 
+  //for while
+  counter:= 0
+  for counter<10{
+    fmt.Println(counter)
+    counter++
+  }
 
+  //counterForever
+  /* counterForever :=0
+  for{
+    fmt.Println(counterForever)
+    counterForever++
+  } */
 }
