@@ -1,66 +1,34 @@
 package main
 
-import "fmt"
+	
+import (
+    "fmt"
+)
 
 func main() {
-  //declaracion de constantes
-  const pi float64 = 3.14
-  const pi2 = 3.1314
-  fmt.Println("pi:",pi)
-  fmt.Println("pi2:",pi2)
-
   //declaracion de variables
-  base :=12
-  var altura int = 14
-  var area int
-
-  fmt.Println(base, altura, area)
-
-  //zero values
-  var a int
-  var b float64
-  var c string
-  var d bool
-  fmt.Println(a, b, c, d)
+  helloMessage := "Hello"
+  worldMessage := "world"
 
 
-  //Area cuadrado
-  const baseCuadrado = 10
-  areaCuadrado := baseCuadrado * baseCuadrado
+  // Println
+  fmt.Println(helloMessage, worldMessage)
+  fmt.Println(helloMessage, worldMessage)
 
-  fmt.Println("Area cuadrado: " , areaCuadrado)
+  //printf
+  nombre:= "Platzi"
+  cursos:= 500
 
+  fmt.Printf("%s tiene más de  %d cursos\n",nombre, cursos)
+  fmt.Printf("%v tiene más de  %v cursos\n",nombre, cursos)
 
-  //operadores aritmeticos
-  x:=10
-  y:=51
+  //sprintf
+  message := fmt.Sprintf("%s tiene más de  %d cursos",nombre, cursos)
+  fmt.Println(message)
 
-  //suma
-  result := x+y
-  fmt.Println("Suma: ", result)
+  //tipo de dato
+  fmt.Printf("nombre: %T\n", nombre)
+  fmt.Printf("cursos: %T\n", cursos)
 
-  //resta
-  result = y-x
-  fmt.Println("Resta: ", result)
-
-  //multiplicacion
-  result = x*y
-  fmt.Println("Multiplicacion: ", result)
-
-  //division
-  result = y/x
-  fmt.Println("Division: ", result)
-
-  //modulo
-  result = y%x
-  fmt.Println("Modulo: ", result)
-
-  //Incremental
-  x++
-  fmt.Println("Incremental: ", x)
-
-  //decremental
-  x--
-  fmt.Println("Decremental: ", x)
 
 }
