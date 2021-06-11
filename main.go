@@ -4,17 +4,39 @@ import (
     "fmt"
 )
 
-type car struct{
-  brand string
-  year int
+type pc struct {
+	ram   int
+	disk  int
+	brand string
+}
+
+func (myPc pc) ping() {
+	fmt.Println(myPc.brand, "Pong")
+}
+
+func (myPc *pc) duplicateRAM() {
+	myPc.ram = myPc.ram * 2
 }
 
 func main() {
-  myCar := car{brand:"Ford", year: 2020}
-  fmt.Println(myCar)
+  
+  a := 50
+  b := &a
 
-  var otherCar car
-  otherCar.brand = "Ferrari"
-  fmt.Println(otherCar)
+  fmt.Println(b)
+  fmt.Println(*b)
+
+ 
+
+  myPc := pc{ram: 16, disk: 200, brand: "msi"}
+	myPc.ping()
+
+	fmt.Println(myPc)
+
+	myPc.duplicateRAM()
+	fmt.Println(myPc)
+	
+	myPc.duplicateRAM()
+	fmt.Println(myPc)
 
 }
